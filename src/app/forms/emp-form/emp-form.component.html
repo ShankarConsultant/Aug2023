@@ -1,0 +1,11 @@
+<br/><br/><br/>
+<form #empForm="ngForm" (ngSubmit)="subFn(empForm)">
+    <input type="text" name="empname" ngModel/><br/><br/>
+    <input type="radio" name="sex" value="male"  ngModel>Male
+    <input type="radio" name="sex" value="female"  ngModel>Female
+    <!-- <input type="text" name="empname" />
+    <input type="text" name="empname" />
+    <input type="text" name="empname" /> --> <br/><br/>
+    <button type="submit" value="Submit" > Submit</button>
+    {{empForm.value | json}}
+</form>
